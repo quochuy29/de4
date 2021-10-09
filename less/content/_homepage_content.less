@@ -1,0 +1,220 @@
+.category{
+    position: relative;
+    bottom: 76px;
+    max-height: 501px;
+    &-product{
+        &-item{
+            .col(33.333333%);
+            .category-img{
+                height: 250px;
+                overflow: hidden;
+            }
+
+            .strength{
+                position: relative;
+                top: -11px;
+            }
+            box-shadow: 5px 1px 5px 5px #dcdcdc;
+        }
+        .category-content{
+            background-color: @text-white-color;
+            height: 251px;
+            text-align: center;
+            .category-icon{
+                padding: 30px 0px;
+                .category-title{
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: 500;
+                    padding: 17px 0px;
+                }
+                .category-content-title{
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.6;
+                }
+            }
+            .individual{
+                padding: 45px 0px;
+            }
+        }
+    }
+}
+
+.top-selling{
+    .product-sell{
+        &-inner{
+            .menu-sell{
+                margin-top: 20px;
+                .menu-title{
+                    color: #000018;
+                    width: 143px;
+                    text-transform: uppercase;
+                    font-size: 18px;
+                    font-weight: 500;
+                    text-align: center;
+                    &:hover{
+                        color: #dd2f31;
+                        border-bottom: 2px solid #dd2f31;
+                    }
+                }
+                .border{
+                    margin-top: 12px;
+                    border: 1px solid #dddddd;
+                }
+            }
+            .product{
+                margin-top: 37px;
+                &-sell-item{
+                    .product-sell-image{
+                        margin-top: 22px;
+                        text-align: center;
+                        .img-pro{
+                            padding: 9px 30px 26px 25px;
+                        }
+                        .elliptical{
+                            padding: 0px 4px 0px 0px;
+                        }
+                    }
+                    .product-sell-price{
+                        margin-left: 28px;
+                    }
+                    .price{
+                        margin-top: 4px;
+                    }
+                    .product-sell-name{
+                        margin-top: 36.5px;
+                        margin-left: 29px;
+                    }
+                    .ethos{
+                        margin-top: 24px;
+                        margin-left: 29px;
+                    }
+                    .price-ethos{
+                        margin-top: 2px;
+                        margin-left: 29px;
+                    }
+                    width: 270px;
+                    height: 330px;
+                    padding-left: 30px;
+                    
+                    &:first-child{
+                        padding-left: 0px;
+                    }
+                    .control-icon{
+                        display: none;
+                        .item-icon{
+                            display: none;
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0px 0px 5px #777777;
+                        .control-icon{
+                            display: block;
+                            height: 34px;
+                            width: 34px;
+                            border: 1px solid #dddddd;
+                            color: #dddddd;
+                            text-align: center;
+                            line-height: 34px;
+                            margin: 15px 0;
+                            &:first-child{
+                                margin-top: 0px;
+                            }
+                            &:hover{
+                                background-color: #dd2f31;
+                                color: @text-white-color;
+                            }
+                            border-top-left-radius:5px;
+                            border-bottom-right-radius: 5px;
+                        }  
+                        .item-icon{
+                            width: 34px;
+                            position:absolute;
+                            margin-top: 20px;
+                            margin-left: 215px;
+                        }
+                    }
+                }
+                &-sell-name{
+                    font-size: 14px;
+                    font-weight: 400;
+                    color: #000018;
+                }
+                &-sell-price{
+                    font-size: 14px;
+                    font-weight: 500;
+                    color: #000018;
+                }
+            }
+            .product-bottom{
+                margin-top: 60px;
+                .product-sell-item{
+                    .product-sell-image{
+                        margin-top: -18px;
+                        .incline{
+                            margin-top: 28px;
+                        }
+                        .proform{
+                            margin-top: 20px;
+                        }
+                        .fitness{
+                            margin-top: 21px;
+                        }
+                    }
+                    .name-proform{
+                        margin-top: 29px;
+                    }
+                    .name-fitness{
+                        margin-top: 32px;
+                    }
+                    &:hover{
+                        .item-icon{
+                            position:absolute;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.border-end{
+    border-bottom: 1px solid #cccccc;
+}
+
+.trademark{
+    &-item{
+        padding: 114px 35.8px;
+        img{
+            vertical-align: middle;
+        }
+        &:first-child{
+            padding-top: 107px;
+        }
+    }
+
+    .sport-gym{
+        padding-left: 37px;
+    }
+
+    .fitness{
+        padding-left: 39px;
+        padding-top: 107px;
+    }
+
+    .local-gym{
+        padding-top: 123px;
+    }
+
+    .lifter{
+        padding-top: 119px;
+        padding-left: 34px;
+    }
+
+    .fitness-club{
+        padding-left: 32px;
+        padding-top: 113px;
+    }
+}
+//h330,w270
