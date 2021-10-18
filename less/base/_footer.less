@@ -1,6 +1,6 @@
 .footer{
     background-color: @bg-header;
-    margin-top: -74px;
+    margin-top: -2px;
     &-top{
         text-align: center;
         padding-top: 100px;
@@ -12,12 +12,19 @@
             padding: 26px 0px;
         }
         .footer-icon-social{
-            .row{
+            .footer-icon-inner{
+                display: flex;
+                flex-wrap: wrap;
+                margin: 0 -15px;
                 justify-content: center;
                 .icon-social{
-                    color: @text-white-color;
-                    margin: 14px 21px;
+                    color: #777777;
+                    padding: 14px 22px;
                     font-size: 18px;
+                    &:first-child{
+                        padding-left: 28px;
+                        padding-right: 28px;
+                    }
                 }
             }
         }
@@ -28,74 +35,42 @@
     }
     &-middle{
         margin-top: 111px;
-        &-item{
-            .footer-item-title{
-                color: @text-white-color;
-                font-weight: 500;
-                font-size: 18px;
-                text-transform: uppercase;
-            }
-            .footer-item-content{
-                color: #777777;
-                padding-top: 25px;
-                .footer-content-item{
-                    display: flex;
-                    .footer-item-summary{
+        &-inner{
+            display: flex;
+            column-gap: 30px;
+            .footer-middle-item{
+                width: calc(25% - 22.5px);
+                .footer-item-title{
+                    color: @text-white-color;
+                    font-weight: 500;
+                    font-size: 18px;
+                    text-transform: uppercase;
+                }
+                .footer-item-content{
+                    color: #777777;
+                    padding-top: 25px;
+                    .footer-content-item{
+                        display: flex;
+                        padding-top: 15px;
+                        &:first-child{
+                            padding-top: 0px;
+                        }
+                        .footer-item-summary{
+                            line-height: 24px;
+                            font-size: 14px;
+                            padding-left: 11px;
+                        }
+                    }
+                    .footer-item-info{
                         line-height: 24px;
                         font-size: 14px;
-                        padding-left: 14px;
+                        padding-top: 16px;
+                        letter-spacing: 0.01em;
+                        &:first-child{
+                            padding-top: 0;
+                        }
                     }
                 }
-            }
-        }
-        .contact{
-            margin-left: 13px;
-            .phone{
-                padding-top: 13px;
-            }
-
-            .mail{
-                padding-top: 15px;
-            }
-
-            .time{
-                padding-top: 15px;
-            }
-        }
-        .account{
-            margin-left: 33px;
-            .checkout{
-                padding-top: 14px;
-            }
-            .register{
-                padding-top: 15px;
-            }
-            .login{
-                padding-top: 15px;
-            }
-        }
-        .infor{
-            margin-left: 177px;
-            .contact-us{
-                padding-top: 15px;
-            }
-            .term{
-                padding-top: 15px;
-            }
-            .policy{
-                padding-top: 15px;
-            }
-        }
-        .link{
-            margin-left: 172px;
-            .help{
-                padding-top: 15px;
-            }
-            .spam{
-                padding-top: 15px;
-            }
-            .faqs{
-                padding-top: 15px;
             }
         }
     }

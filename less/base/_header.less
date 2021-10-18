@@ -13,7 +13,7 @@
         left: 0%;
         width: 100%;
         &-inner{
-            margin-top: -1px;
+            margin-top: -2px;
             color: #fff;
             .banner-title{
                 font-size: 60px;
@@ -36,7 +36,7 @@
             .banner-btn{
                 margin-top: 53px;
                 width: 170px;
-                height: 47px;
+                height: 50px;
                 border: 1px solid #fff;
                 &-text{
                     letter-spacing: 0.04em;
@@ -45,7 +45,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    line-height: 47px;
+                    line-height: 49px;
                 }
             }
         }
@@ -53,63 +53,54 @@
 }
 
 .header{
-    &-banner{
-        position: fixed;
-        top: 0px;
-        right: 0;
-        left: 0;
-        font-size: 16px;
-        // background: rgba(0, 0, 0, 0.5);
-        background: rgba(0, 0, 0, 0.5);
-        width: 100%;
-        z-index: 1000;
-        &-inner{
-            .flex();
-            .logo{
-                margin-top: 4px;
+    position: fixed;
+    top: 0px;
+    right: 0;
+    left: 0;
+    font-size: 16px;
+    // background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    .header-banner-inner{
+        .flex();
+        padding-top: 20px;
+        padding-bottom: 11px;
+        box-sizing: border-box;
+        color: @text-white-color;
+        font-weight: 400;
+        nav{
+            margin-right: 37px;
+            .nav-icon{
+                display: none;
             }
-            padding: 17.5px 0px;
-            box-sizing: border-box;
-            color: @text-white-color;
-            font-weight: 400;
-            nav{
-                margin-right: 37px;
-                height: 19px;
-                padding: 23px 0px;
-                .nav-icon{
-                    display: none;
-                }
-                .navbar {
-                    .nav-item {
-                        margin: 0 24px;
-                        display: inline-block;
-                        a {
-                            color: #fff;
-                            &:hover {
-                                text-decoration: underline;
-                            }
+            .navbar {
+                .nav-item {
+                    margin: 0 24px;
+                    display: inline-block;
+                    a {
+                        color: #fff;
+                        &:hover {
+                            text-decoration: underline;
                         }
-                        &:last-child {
-                            margin-right: 0;
-                        }
+                    }
+                    &:last-child {
+                        margin-right: 0;
                     }
                 }
             }
-            .icon-item{
-                display: flex;
-                margin-right: 28px;
-                height: 19px;
-                padding: 23px 0px;
-                width: 156px;
-            }
-            .control-item{
-                border-right: 1px solid #fff;
-                color: #fff;
-                font-size: 15px;
-                padding: 0px 27px;
-                &:last-child{
-                    border-right: 0px;
-                }
+        }
+        .icon-item{
+            display: flex;
+            margin-right: -25px;
+            padding: 23px 0px;
+        }
+        .control-item{
+            border-right: 1px solid #fff;
+            color: #fff;
+            font-size: 15px;
+            padding: 0px 27px;
+            &:last-child{
+                border-right: 0px;
             }
         }
     }
