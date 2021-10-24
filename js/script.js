@@ -7,7 +7,11 @@ $(document).ready(function() {
     $('.nav-icon').click(function(e) {
         e.preventDefault();
         navbar.classList.toggle('active');
-        // $('.cover').addClass('active');
+        $('.cover').addClass('active');
     });
-
+    $('.cover').click(function(e) {
+        e.preventDefault();
+        $('.navbar').removeClass('active');
+        $('.cover').removeClass('active');
+    });
 });

@@ -1,46 +1,62 @@
-.banner{
-    max-height: 950px;
-    overflow: hidden;
-    &-item{
+.cover {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+}
+
+.cover.active {
+    z-index: 100;
+    .transit(all, 0.5s);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner {
+    background: url('../img/banner4.png') no-repeat;
+    max-width: 1920px;
+    width: 100%;
+    height: 950px;
+    background-position: 77% 0;
+
+    &-content {
         position: relative;
-        img {
-            width: 100%;
-        }
-    }
-    &-content{
-        position: absolute;
-        top: 31%;
-        left: 0%;
-        width: 100%;
-        &-inner{
-            margin-top: -2px;
-            color: #fff;
-            .banner-title{
+        color: #fff;
+        height: 775px;
+
+        &-inner {
+            position: absolute;
+            top: 38%;
+
+            .banner-title {
                 font-size: 60px;
                 font-weight: 500;
                 margin-left: -3px;
             }
-            .banner-sumary{
+
+            .banner-sumary {
                 font-size: 40px;
                 font-weight: 500;
                 line-height: 1;
                 margin-left: -2px;
-            }  
-            .banner-title-content{
+            }
+
+            .banner-title-content {
                 padding-top: 26px;
                 line-height: 1.85;
                 font-size: 14px;
                 font-weight: 400;
                 margin-top: 2px;
             }
-            .banner-btn{
+
+            .banner-btn {
                 margin-top: 53px;
                 width: 170px;
                 height: 50px;
                 border: 1px solid #fff;
-                &-text{
+
+                &-text {
                     letter-spacing: 0.04em;
-                    color: #fff; 
+                    color: #fff;
                     font-size: 14px;
                     display: flex;
                     align-items: center;
@@ -52,55 +68,76 @@
     }
 }
 
-.header{
+.header {
     position: fixed;
     top: 0px;
     right: 0;
     left: 0;
     font-size: 16px;
-    // background: rgba(0, 0, 0, 0.5);
     background: rgba(0, 0, 0, 0.5);
     z-index: 1000;
-    .header-banner-inner{
-        .flex();
-        padding-top: 20px;
-        padding-bottom: 11px;
+
+    .header-banner-inner {
+        display: flex;
+        padding-top: 18px;
+        padding-bottom: 13px;
         box-sizing: border-box;
-        color: @text-white-color;
+        color: #fff;
         font-weight: 400;
-        nav{
-            margin-right: 37px;
-            .nav-icon{
+        align-items: center;
+
+        .logo {
+            width: 23%;
+        }
+
+        nav {
+            width: 54%;
+
+            .nav-icon {
                 display: none;
             }
+
             .navbar {
                 .nav-item {
-                    margin: 0 24px;
+                    margin-right: 26px;
+                    margin-left: 21.3px;
                     display: inline-block;
+
                     a {
                         color: #fff;
+
                         &:hover {
                             text-decoration: underline;
                         }
                     }
+
                     &:last-child {
                         margin-right: 0;
                     }
                 }
             }
         }
-        .icon-item{
+
+        .icon-item {
             display: flex;
-            margin-right: -25px;
             padding: 23px 0px;
+            width: 23%;
+            justify-content: right;
+            align-items: center;
         }
-        .control-item{
+
+        .control-item {
             border-right: 1px solid #fff;
-            color: #fff;
             font-size: 15px;
-            padding: 0px 27px;
-            &:last-child{
-                border-right: 0px;
+            padding: 0 27px;
+
+            &:last-child {
+                border-right: 0;
+                padding-right: 0;
+            }
+
+            a {
+                color: #fff;
             }
         }
     }
