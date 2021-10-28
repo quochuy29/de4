@@ -5,9 +5,21 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'poppins';
+  font-family: 'Poppins Bold';
   src: url('../fonts/Poppins/Poppins-Bold.ttf');
   font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Poppins Bold';
+  src: url('../fonts/Poppins/Poppins-Bold.ttf');
+  font-weight: 400;
   font-style: normal;
 }
 * {
@@ -86,13 +98,15 @@ body {
   top: 38%;
 }
 .banner-content-inner .banner-title {
+  font-family: 'Poppins Bold';
   font-size: 60px;
-  font-weight: 500;
+  font-weight: 700;
   margin-left: -3px;
 }
 .banner-content-inner .banner-sumary {
+  font-family: 'Poppins Bold';
   font-size: 40px;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1;
   margin-left: -2px;
 }
@@ -137,24 +151,27 @@ body {
   align-items: center;
 }
 .header .header-banner-inner .logo {
-  width: 23%;
+  width: 24.7%;
 }
 .header .header-banner-inner nav {
-  width: 54%;
+  width: 58.63333333%;
 }
 .header .header-banner-inner nav .nav-icon {
   display: none;
 }
+.header .header-banner-inner nav .navbar {
+  display: flex;
+}
 .header .header-banner-inner nav .navbar .nav-item {
-  margin-right: 26px;
-  margin-left: 21.3px;
-  display: inline-block;
+  margin-right: 52px;
 }
 .header .header-banner-inner nav .navbar .nav-item a {
   color: #fff;
+  font-size: 16px;
+  font-weight: 400;
 }
 .header .header-banner-inner nav .navbar .nav-item a:hover {
-  text-decoration: underline;
+  opacity: 0.5;
 }
 .header .header-banner-inner nav .navbar .nav-item:last-child {
   margin-right: 0;
@@ -162,7 +179,7 @@ body {
 .header .header-banner-inner .icon-item {
   display: flex;
   padding: 23px 0px;
-  width: 23%;
+  width: 16.66666667%;
   justify-content: right;
   align-items: center;
 }
@@ -191,7 +208,8 @@ body {
 .slider-inner .slider-item .slider-title {
   text-align: center;
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 700;
+  font-family: 'Poppins Bold';
 }
 .slider-inner .slider-item .slider-img {
   width: 80px;
@@ -215,8 +233,9 @@ body {
   padding-right: 3px;
 }
 .slider-inner .slider-content-inner .slide-text-name {
+  font-family: 'Poppins Bold';
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   color: #000;
   text-transform: uppercase;
   padding-top: 26px;
@@ -276,8 +295,9 @@ body {
 .category-product-item .category-content .category-icon .category-title {
   text-transform: uppercase;
   font-size: 18px;
-  font-weight: 500;
+  font-weight: 700;
   padding: 17px 0px;
+  font-family: 'Poppins Bold';
 }
 .category-product-item .category-content .category-icon .category-content-title {
   font-size: 14px;
@@ -296,6 +316,15 @@ body {
 }
 .product-sell .tab-product-summary {
   padding: 19px 17.5px;
+}
+.product-sell .tab-product-summary:hover {
+  opacity: 0.5;
+}
+.product-sell .tab-product-summary a {
+  font-family: 'Poppins Bold';
+  font-size: 18px;
+  font-weight: 700;
+  color: #000018;
 }
 .product-sell .tab-product .active {
   border-bottom: 1px solid #db090b;
@@ -322,16 +351,17 @@ body {
 }
 .product-sell .product-sell-item .product-sell-price {
   font-size: 14px;
-  font-weight: 500;
-  color: #000018;
+  font-family: 'Poppins Bold';
+  font-weight: 400;
+  color: #000000;
   margin-left: 28px;
   margin-top: 1px;
 }
 .product-sell .product-sell-item .product-sell-name {
   font-size: 14px;
   font-weight: 400;
-  color: #000018;
-  margin-top: 20px;
+  color: #000000;
+  margin-top: 22px;
   margin-left: 28px;
 }
 .product-sell .product-sell-item .control-icon {
@@ -427,7 +457,8 @@ body {
 }
 .footer-middle .footer-middle-item .footer-item-title {
   color: #fff;
-  font-weight: 500;
+  font-family: 'Poppins Bold';
+  font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -468,7 +499,13 @@ body {
   font-size: 14px;
   font-weight: 400;
 }
-@media all and (max-width: 1170px) {
+@media (min-width: 1921px) {
+  .banner {
+    max-width: 100%;
+    background: url('../img/banner4.png');
+  }
+}
+@media all and (max-width: 1024px) {
   .header .header-banner-inner .logo {
     order: 2;
     width: 33.333333%;
@@ -521,8 +558,6 @@ body {
     width: 33.333333%;
     order: 3;
   }
-}
-@media all and (max-width: 1024px) {
   .category-product {
     bottom: -7px;
     justify-content: center;
